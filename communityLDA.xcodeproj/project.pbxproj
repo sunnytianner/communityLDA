@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		523073621779225700EF04D7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 523073611779225700EF04D7 /* main.cpp */; };
 		523073641779225700EF04D7 /* communityLDA.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 523073631779225700EF04D7 /* communityLDA.1 */; };
+		52307374177922C800EF04D7 /* dataset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230736B177922C800EF04D7 /* dataset.cpp */; };
+		52307375177922C800EF04D7 /* lda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230736D177922C800EF04D7 /* lda.cpp */; };
+		52307376177922C800EF04D7 /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5230736E177922C800EF04D7 /* model.cpp */; };
+		52307377177922C800EF04D7 /* strtokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52307370177922C800EF04D7 /* strtokenizer.cpp */; };
+		52307378177922C800EF04D7 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52307372177922C800EF04D7 /* utils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +30,17 @@
 
 /* Begin PBXFileReference section */
 		5230735D1779225700EF04D7 /* communityLDA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = communityLDA; sourceTree = BUILT_PRODUCTS_DIR; };
-		523073611779225700EF04D7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		523073631779225700EF04D7 /* communityLDA.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = communityLDA.1; sourceTree = "<group>"; };
+		5230736A177922C800EF04D7 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		5230736B177922C800EF04D7 /* dataset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dataset.cpp; sourceTree = "<group>"; };
+		5230736C177922C800EF04D7 /* dataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataset.h; sourceTree = "<group>"; };
+		5230736D177922C800EF04D7 /* lda.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lda.cpp; sourceTree = "<group>"; };
+		5230736E177922C800EF04D7 /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		5230736F177922C800EF04D7 /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		52307370177922C800EF04D7 /* strtokenizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strtokenizer.cpp; sourceTree = "<group>"; };
+		52307371177922C800EF04D7 /* strtokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strtokenizer.h; sourceTree = "<group>"; };
+		52307372177922C800EF04D7 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		52307373177922C800EF04D7 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +73,16 @@
 		523073601779225700EF04D7 /* communityLDA */ = {
 			isa = PBXGroup;
 			children = (
-				523073611779225700EF04D7 /* main.cpp */,
+				5230736A177922C800EF04D7 /* constants.h */,
+				5230736B177922C800EF04D7 /* dataset.cpp */,
+				5230736C177922C800EF04D7 /* dataset.h */,
+				5230736D177922C800EF04D7 /* lda.cpp */,
+				5230736E177922C800EF04D7 /* model.cpp */,
+				5230736F177922C800EF04D7 /* model.h */,
+				52307370177922C800EF04D7 /* strtokenizer.cpp */,
+				52307371177922C800EF04D7 /* strtokenizer.h */,
+				52307372177922C800EF04D7 /* utils.cpp */,
+				52307373177922C800EF04D7 /* utils.h */,
 				523073631779225700EF04D7 /* communityLDA.1 */,
 			);
 			path = communityLDA;
@@ -117,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				523073621779225700EF04D7 /* main.cpp in Sources */,
+				52307374177922C800EF04D7 /* dataset.cpp in Sources */,
+				52307375177922C800EF04D7 /* lda.cpp in Sources */,
+				52307376177922C800EF04D7 /* model.cpp in Sources */,
+				52307377177922C800EF04D7 /* strtokenizer.cpp in Sources */,
+				52307378177922C800EF04D7 /* utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
